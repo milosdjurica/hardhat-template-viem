@@ -26,12 +26,12 @@ const config: HardhatUserConfig = {
       // forking: {
       // 	url: MAINNET_RPC_URL,
       // },
-      // allowUnlimitedContractSize: true,
-      // blockConfirmations: 3
     },
     localhost: {
       chainId: 1337,
       url: "http://127.0.0.1:7545",
+      // allowUnlimitedContractSize: true,
+      // blockConfirmations: 3
     },
     ganache: {
       chainId: 1337,
@@ -39,8 +39,8 @@ const config: HardhatUserConfig = {
     },
     sepolia: {
       chainId: 11155111,
-      // url: SEPOLIA_RPC_URL,
-      // accounts: [PRIVATE_KEY],
+      url: SEPOLIA_RPC_URL,
+      accounts: [PRIVATE_KEY],
     },
   },
   etherscan: {
